@@ -24,7 +24,30 @@ console.log(a);
     var c = 30    
 }
 
-
 console.log(a);
 // console.log(b);
 console.log(c);   
+
+
+function one(){
+    const username = "Prince"
+    function two(){
+        var lastname ="Kumar"
+        console.log(username);
+        console.log(lastname);
+    function three(){
+        console.log(`Hello three ${lastname}`);
+        }
+        three()
+    }
+    
+    function four(){
+        console.log(`Hello Four ${lastname}`);
+    }
+    two()
+   
+    four()
+}
+
+console.log(one());
+
