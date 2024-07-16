@@ -18,3 +18,14 @@ function getUserName(username){
 let username = getUserName("Prince Kumar")
 
 console.log(`Username is ${username}\ntotal cartPrice is ${totalCartPrice}`);
+
+const greetings ="Prince Kumar"
+let totalChar =0;
+for (const greet of greetings) {
+    if(greet == ' ')
+        break;
+    totalChar += 1;
+    console.log(`Each char is: ${greet}`);    
+}
+console.log(`Total chars in Greetings are: ${totalChar}`);
+
