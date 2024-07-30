@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: azure;
+            font-size: medium;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id ="title" class="heading"> DOM Learning  <span style="display: none;">With Youtube Content</span>  </h1>
+           <p class="lorem"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Cum sequi quod iure, laborum autem dolorem debitis mollitia perspiciatis
+             ab quaerat minus! Recusandae nostrum illum vel quos ratione?
+             Laudantium, dicta enim?
+            </p>
+    </div>
+    <div class="parents">
+        <div class="day"> Monday </div>
+        <div class="day"> Tuesday </div>
+        <div class="day"> Wednesday</div>
+        <div class="day"> Thursday</div>
+        <div class="day"> Friday</div>
+        <div class="day"> Saturday</div>
+        </div>
+        <ul>
+            <li>One</li>
+            <li>Two </li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+            <li>Six</li>
+            <li>Seven</li>
+            <li>Eight</li>
+            <li>Nine</li>
+            <li>Ten</li>
+        </ul>
+
+    <script>
+
+const getClass = document.querySelector('.parents');
+        console.log(getClass);   
+        console.log(getClass.children);
+
+        const div = document.createElement('div');
+        div.className="main"
+        div.setAttribute('title',"main title");
+        div.style.backgroundColor = "green";
+        div.style.padding = "20px";
+        const addText = document.createTextNode("Adding Div in there");
+        div.appendChild(addText);
+
+        document.body.appendChild(div);
+    </script>
+
+        /*
+title.innerText => only select the text which is visible in the Webpage.
+title.textContent => Select all text which is hide by CSS property, [ LIke we did by inside the <SPAN> ].
+
+title.innerHTML => Select all the content and show everything including the used HTML TAG in the Sentence.
+        
+
+==============  QUERY SELECTOR   ========================
+// querySelector used same as CSS  selector.    
+// It select only one value at a time
+// If there are multiple given_query is available then It select first_result of the total Output.
+
+    document.querySelector('h1')  
+    document.querySelector('#title')
+    document.querySelector('.heading')
+    document.querySelector('input["type = "password"]')
+    
+
+    ================  querySelectorAll ===========
+===>  It select all the resulted input at a time.
+    
+    
+*/
+</body>
+</html>
+
+/*
+
+10,976
+
+9,258
+
+
+05/09/2020    24 sep (19 days ) 
+
+
+05/01/
+
+
+Mahindra finance quick pay.
+
+
+*/

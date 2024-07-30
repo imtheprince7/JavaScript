@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Edit & Remove Element</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+
+    <button type="button" style="background-color: aliceblue; font-size: medium; border-radius: 20px; padding: 10px;" onclick="  buttonWork()"> Change Colour</button>
+
+
+<script>
+    function addLiElement(lang){
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(lang));
+    document.querySelector('.language').appendChild(li);
+  }
+  addLiElement("Java")
+  addLiElement("Python")
+  addLiElement("C++")
+    var langName;
+  function buttonWork(){
+    langName = prompt("Tell me language name:")
+    // console.log(langName);
+
+    const myLi = document.querySelectorAll('li')
+  const myArray = Array.from(myLi);
+
+  myArray.forEach( (li)=>{
+ if(li.innerHTML.toUpperCase() == `${langName}`.toUpperCase()){
+        li.style.backgroundColor = "green"
+        li.style.padding= "10px";
+        li.style.fontSize="20px";
+        li.style.borderRadius ="20px";
+    }
+  })
+  }
+
+  
+
+
+</script>
+
+</body>
+</html>
